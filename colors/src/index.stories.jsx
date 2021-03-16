@@ -1,8 +1,7 @@
 import React from 'react';
 import 'react-native';
 import { ColorsShowcase } from '~/showcases';
-import { light as lightScheme, dark as darkScheme} from './index';
-
+import { light as lightScheme, dark as darkScheme } from './index';
 
 export const light = () => (
   <>

@@ -37,12 +37,14 @@ export const ColorsShowcase = ({
     <View style={styles.container as ViewStyle}>
       {Object.entries(colors).map(([caption, color]) => (
         <View key={caption} style={styles.wrapper as ViewStyle}>
-          <View style={{ backgroundColor: color, ...styles.box } as ViewStyle} />
+          <View
+            style={{ backgroundColor: color, ...styles.box } as ViewStyle}
+          />
           <Text
             style={
               {
                 ...styles.caption,
-                color: colors.text
+                color: colors.text,
               } as TextStyle
             }
           >

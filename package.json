@@ -1,14 +1,15 @@
 {
-	"name": "@divriots/starter-reactnative",
-	"version": "0.0.0",
-	"description": "",
-	"license": "ISC",
-	"type": "module",
-	"homepage": "{{ homepage }}",
-	"scripts": {
-		"serve": "dsd-cli serve VvdVbvAaydq8hYLh7RLq --open"
-	},
-	"devDependencies": {
-		"dsd-cli": "latest"
-	}
+  "name": "@divriots/starter-reactnative",
+  "version": "0.0.0",
+  "description": "",
+  "license": "ISC",
+  "type": "module",
+  "homepage": "{{ homepage }}",
+  "scripts": {
+    "serve": "dsd-cli serve VvdVbvAaydq8hYLh7RLq --open"
+  },
+  "devDependencies": {
+    "dsd-cli": "latest",
+    "prettier": "2.2.1"
+  }
 }
