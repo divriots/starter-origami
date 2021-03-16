@@ -1,0 +1,29 @@
+{
+  "packages": {
+    "dir": "",
+    "menu": [
+      "introduction",
+      [
+        "theme",
+        [
+          "fonts",
+          "colors",
+          "roundness",
+          "animation"
+        ]
+      ],
+      [
+        "infrastructure",
+        [
+          "theme"
+        ]
+      ],
+      [
+        "layout",
+        [
+          "mdx-layout"
+        ]
+      ]
+    ]
+  }
+}
