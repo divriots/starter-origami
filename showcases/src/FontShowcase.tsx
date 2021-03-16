@@ -1,5 +1,5 @@
 import React from 'react';
-import { fontConfig } from './index';
+import { fontConfig } from '~/fonts';
 
 const Definitions = ({
   osName,

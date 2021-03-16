@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ViewStyle, TextStyle } from 'react-native';
-import { light, dark } from './index';
+import { light, dark } from '~/colors';
 import { useTheme } from 'react-native-paper';
 
 const styles = {
@@ -36,15 +36,13 @@ export const ColorsShowcase = ({
   return (
     <View style={styles.container as ViewStyle}>
       {Object.entries(colors).map(([caption, color]) => (
-        <View style={styles.wrapper as ViewStyle}>
-          <View
-            style={{ backgroundColor: color, ...styles.box } as ViewStyle}
-          />
+        <View key={caption} style={styles.wrapper as ViewStyle}>
+          <View style={{ backgroundColor: color, ...styles.box } as ViewStyle} />
           <Text
             style={
               {
                 ...styles.caption,
-                color: colorScheme === 'light' ? '#000' : '#FFF',
+                color: colors.text
               } as TextStyle
             }
           >

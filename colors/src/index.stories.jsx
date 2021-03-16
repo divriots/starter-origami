@@ -1,23 +1,19 @@
 import React from 'react';
 import 'react-native';
-import { ColorsShowcase } from './ColorsShowcase';
+import { ColorsShowcase } from '~/showcases';
+import { light as lightScheme, dark as darkScheme} from './index';
 
-const styles = {
-  surface: {
-    width: '100%',
-    height: '100%',
-    padding: '1rem',
-  },
-};
 
 export const light = () => (
-  <div style={{ ...styles.surface }}>
+  <>
+    <style>{`body { background-color: ${lightScheme.background}; }`}</style>
     <ColorsShowcase colorScheme="light" />
-  </div>
+  </>
 );
 
 export const dark = () => (
-  <div style={{ ...styles.surface, backgroundColor: '#212121' }}>
+  <>
+    <style>{`body { background-color: ${darkScheme.background}; }`}</style>
     <ColorsShowcase colorScheme="dark" />
-  </div>
+  </>
 );
