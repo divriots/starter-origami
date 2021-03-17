@@ -30,13 +30,13 @@ export const text = () => (
 export const outlined = () => (
   <div>
     <Button style={styles.button} mode="outlined">
-      Default
+      Outlined
     </Button>
     <Button style={styles.button} mode="outlined" icon="camera">
-      Default
+      Outlined
     </Button>
     <Button style={styles.button} mode="outlined" loading={true}>
-      Default
+      Outlined
     </Button>
   </div>
 );
@@ -44,13 +44,13 @@ export const outlined = () => (
 export const contained = () => (
   <div>
     <Button style={styles.button} mode="contained">
-      Default
+      Contained
     </Button>
     <Button style={styles.button} mode="contained" icon="camera">
-      Default
+      Contained
     </Button>
     <Button style={styles.button} mode="contained" loading={true}>
-      Default
+      Contained
     </Button>
   </div>
 );

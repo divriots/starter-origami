@@ -26,7 +26,12 @@ export const Layout = (props) => {
           }}
           onSwitch={setScheme}
         />
-        <CoreLayout {...props} />
+        <CoreLayout
+          logo={
+            <img src="https://callstack.github.io/react-native-paper/images/sidebar-logo.svg" style={{ margin: '1rem' }} />
+          }
+          {...props}
+        />
       </MDXProvider>
     </PaperProvider>
   );

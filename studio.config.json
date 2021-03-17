@@ -13,6 +13,14 @@
         ]
       ],
       [
+        "components",
+        [
+          "activity-indicator",
+          "appbar",
+          "button"
+        ]
+      ],
+      [
         "infrastructure",
         [
           "theme"
