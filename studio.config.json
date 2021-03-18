@@ -17,7 +17,15 @@
         [
           "activity-indicator",
           "appbar",
-          "button"
+          "button",
+          "badge",
+          "banner",
+          "bottom-navigation",
+          "card",
+          "checkbox",
+          "chip",
+          "data-table",
+          "dialog"
         ]
       ],
       [
