@@ -25,7 +25,13 @@
           "checkbox",
           "chip",
           "data-table",
-          "dialog"
+          "dialog",
+          "drawer",
+          "fab",
+          "helper-text",
+          "icon-button",
+          "list",
+          "menu"
         ]
       ],
       [
