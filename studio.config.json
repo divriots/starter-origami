@@ -37,7 +37,9 @@
           "radio-button",
           "search-bar",
           "snackbar",
-          "surface"
+          "surface",
+          "switch",
+          "text-input"
         ]
       ],
       [
