@@ -36,7 +36,8 @@
           "progress-bar",
           "radio-button",
           "search-bar",
-          "snackbar"
+          "snackbar",
+          "surface"
         ]
       ],
       [
