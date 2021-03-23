@@ -31,7 +31,9 @@
           "helper-text",
           "icon-button",
           "list",
-          "menu"
+          "menu",
+          "modal",
+          "progress-bar"
         ]
       ],
       [

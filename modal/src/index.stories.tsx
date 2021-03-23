@@ -1,8 +1,7 @@
 import React from 'react';
 import { Modal } from './index';
 import { Button } from '~/button';
-import { Portal, Provider, Text } from 'react-native-paper';
-
+import { Provider, Portal, Text } from 'react-native-paper';
 
 export default {
   parameters: {
@@ -32,4 +31,4 @@ const ModalShowcase = () => {
   );
 };
 
-export const menu = () => <ModalShowcase />;
+export const modal = () => <ModalShowcase />;
