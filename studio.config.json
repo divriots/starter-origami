@@ -33,7 +33,10 @@
           "list",
           "menu",
           "modal",
-          "progress-bar"
+          "progress-bar",
+          "radio-button",
+          "search-bar",
+          "snackbar"
         ]
       ],
       [

@@ -1,0 +1,65 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import { RadioButton } from '../src/index';
+import { View } from 'react-native';
+import { Layout } from '~/mdx-layout';
+
+export default Layout;
+
+# RadioButton
+
+### Description
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import { View } from 'react-native';
+import { RadioButton } from 'react-native-paper';
+
+const MyComponent = () => {
+  const [checked, setChecked] = React.useState('first');
+
+  return (
+    <View>
+      <RadioButton
+        value="first"
+        status={checked === 'first' ? 'checked' : 'unchecked'}
+        onPress={() => setChecked('first')}
+      />
+      <RadioButton
+        value="second"
+        status={checked === 'second' ? 'checked' : 'unchecked'}
+        onPress={() => setChecked('second')}
+      />
+    </View>
+  );
+};
+
+export default MyComponent;
+```
+
+<Playground
+  scope={{ RadioButton, View }}
+  code={`
+() => {
+  const [checked, setChecked] = React.useState('first');
+  return (
+  <View>
+    <RadioButton
+      value="first"
+      status={ checked === 'first' ? 'checked' : 'unchecked' }
+      onPress={() => setChecked('first')}
+    />
+    <RadioButton
+      value="second"
+      status={ checked === 'second' ? 'checked' : 'unchecked' }
+      onPress={() => setChecked('second')}
+    />
+  </View>
+  );
+};
+`}
+/>
+
+## Props
