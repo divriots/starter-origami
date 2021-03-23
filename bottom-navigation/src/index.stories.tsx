@@ -10,7 +10,7 @@ export default {
 const BottomNavigationShowcase = () => {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'music', title: 'Music', icon: 'queue-music' },
+    { key: 'music', title: 'Music', icon: 'music' },
     { key: 'albums', title: 'Albums', icon: 'album' },
     { key: 'recents', title: 'Recents', icon: 'history' },
   ]);

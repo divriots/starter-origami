@@ -8,6 +8,9 @@
   "scripts": {
     "serve": "dsd-cli serve VvdVbvAaydq8hYLh7RLq --open"
   },
+  "dependencies": {
+    "@babel/runtime": "latest"
+  },
   "devDependencies": {
     "dsd-cli": "latest",
     "prettier": "2.2.1"
