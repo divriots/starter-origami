@@ -1,0 +1,59 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import {
+  Text,
+  Title,
+  Subheading,
+  Paragraph,
+  Headline,
+  Caption,
+} from '../src/index';
+import { View } from 'react-native';
+import { Layout } from '~/mdx-layout';
+
+export default Layout;
+
+# Typography
+
+### Description
+
+## Usage
+
+```tsx
+import React from 'react';
+import {
+  Text,
+  Title,
+  Subheading,
+  Paragraph,
+  Headline,
+  Caption,
+} from 'react-native-paper';
+
+export const typography = () => (
+  <>
+    <Text>Text</Text>
+    <Title>Title</Title>
+    <Subheading>Subheading</Subheading>
+    <Paragraph>Paragraph</Paragraph>
+    <Headline>Headline</Headline>
+    <Caption>Caption</Caption>
+  </>
+);
+```
+
+<Playground
+  scope={{ Text, Title, Subheading, Paragraph, Headline, Caption, View }}
+  code={`
+<View style={{ diplay: 'flex', flexDirection: 'column' }}>
+  <Text>Text</Text>
+  <Title>Title</Title>
+  <Subheading>Subheading</Subheading>
+  <Paragraph>Paragraph</Paragraph>
+  <Headline>Headline</Headline>
+  <Caption>Caption</Caption>
+</View>
+`}
+/>
+
+## Props

@@ -39,7 +39,10 @@
           "snackbar",
           "surface",
           "switch",
-          "text-input"
+          "text-input",
+          "toggle-button",
+          "touchable-ripple",
+          "typography"
         ]
       ],
       [
