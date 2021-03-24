@@ -9,4 +9,4 @@ export default {
 };
 
 
-export const progress_bar = () => <ProgressBar progress={0.5} />;
+export const progress_bar = () => <ProgressBar progress={0.5} style={{ width: '10rem' }} />;

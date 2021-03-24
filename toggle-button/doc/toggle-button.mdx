@@ -15,30 +15,37 @@ export default Layout;
 import * as React from 'react';
 import { ToggleButton } from 'react-native-paper';
 
-const ToggleButtonExample = () => {
-  const [status, setStatus] = React.useState('checked');
-
-  const onButtonToggle = (value) => {
-    setStatus(status === 'checked' ? 'unchecked' : 'checked');
-  };
+const MyComponent = () => {
+  const [value, setValue] = React.useState('left');
 
   return (
-    <ToggleButton
-      icon="bluetooth"
-      value="bluetooth"
-      status={status}
-      onPress={onButtonToggle}
-    />
+    <ToggleButton.Group
+      onValueChange={(value) => setValue(value)}
+      value={value}
+    >
+      <ToggleButton icon="format-align-left" value="left" />
+      <ToggleButton icon="format-align-right" value="right" />
+    </ToggleButton.Group>
   );
 };
 
-export default ToggleButtonExample;
+export default MyComponent;
 ```
 
 <Playground
   scope={{ ToggleButton }}
   code={`
-<ToggleButton icon="bluetooth" value="bluetooth" />
+() => {
+  const [value, setValue] = React.useState('left');
+  return (
+    <ToggleButton.Group
+      onValueChange={value => setValue(value)}
+      value={value}>
+      <ToggleButton icon="format-align-left" value="left" />
+      <ToggleButton icon="format-align-right" value="right" />
+    </ToggleButton.Group>
+  );
+};
 `}
 />
 

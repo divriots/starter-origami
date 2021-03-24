@@ -8,4 +8,16 @@ export default {
   },
 };
 
-export const toggle_button = () => <ToggleButton icon="bluetooth" value="bluetooth" />;
+const ToggleGroupShowcase = () => {
+  const [value, setValue] = React.useState('left');
+  return (
+    <ToggleButton.Group
+      onValueChange={value => setValue(value)}
+      value={value}>
+      <ToggleButton icon="format-align-left" value="left" />
+      <ToggleButton icon="format-align-right" value="right" />
+    </ToggleButton.Group>
+  );
+};
+
+export const toggle_button = () => <ToggleGroupShowcase />
