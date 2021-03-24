@@ -1,7 +1,8 @@
 import React from 'react';
 import { Dialog } from './index';
 import { Button } from '~/button';
-import { Portal, Provider, Paragraph } from 'react-native-paper';
+import { Portal, Provider } from 'react-native-paper';
+import { Paragraph } from '~/typography';
 
 export default {
   parameters: {

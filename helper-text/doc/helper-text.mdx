@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { TextInput } from 'react-native-paper';
+import { TextInput } from '~/text-input';
 import { mdx } from '@mdx-js/react';
 import { HelperText } from '../src/index';
 import { Playground } from '@divriots/dockit-react/playground';
@@ -22,13 +22,13 @@ import { HelperText, TextInput } from 'react-native-paper';
 const MyComponent = () => {
   const [text, setText] = React.useState('');
 
-   const onChangeText = text => setText(text);
+  const onChangeText = (text) => setText(text);
 
   const hasErrors = () => {
     return !text.includes('@');
   };
 
- return (
+  return (
     <View>
       <TextInput label="Email" value={text} onChangeText={onChangeText} />
       <HelperText type="error" visible={hasErrors()}>

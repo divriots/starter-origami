@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { TextInput } from 'react-native-paper';
+import { TextInput } from '~/text-input';
 import { HelperText } from './index';
 
 export default {

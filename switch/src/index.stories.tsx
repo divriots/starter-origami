@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch } from './index';
-import { Text } from 'react-native-paper';
 
 export default {
   parameters: {

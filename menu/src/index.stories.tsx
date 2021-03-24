@@ -1,7 +1,8 @@
 import React from 'react';
 import { Menu } from './index';
 import { View } from 'react-native';
-import { Button, Divider, Provider } from 'react-native-paper';
+import { Divider, Provider } from 'react-native-paper';
+import { Button } from '~/button';
 
 
 export default {

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Modal } from './index';
 import { Button } from '~/button';
-import { Provider, Portal, Text } from 'react-native-paper';
+import { Provider, Portal } from 'react-native-paper';
+import { Text } from '~/typography';
 
 export default {
   parameters: {
