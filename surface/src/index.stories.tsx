@@ -1,4 +1,5 @@
 import React from 'react';
+import '~/mdx-layout/dist/icons.css';
 import { Surface } from './index';
 import { Text } from 'react-native-paper';
 

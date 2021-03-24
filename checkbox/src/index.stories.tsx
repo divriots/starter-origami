@@ -1,4 +1,5 @@
 import React from 'react';
+import '~/mdx-layout/dist/icons.css';
 import { Checkbox } from './index';
 
 export default {

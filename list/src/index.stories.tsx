@@ -1,4 +1,5 @@
 import React from 'react';
+import '~/mdx-layout/dist/icons.css';
 import { View, Text } from 'react-native';
 import { List } from './index';
 

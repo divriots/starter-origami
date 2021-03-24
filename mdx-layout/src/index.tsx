@@ -10,6 +10,7 @@ import { Playground } from '@divriots/dockit-react/playground';
 import { Showcases } from '@divriots/dockit-react/showcases';
 import { Props, Description } from '@divriots/dockit-react/props';
 import { createTheme } from '~/theme';
+import './icons.css';
 
 type ColorScheme = 'light' | 'dark';
 

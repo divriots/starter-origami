@@ -1,7 +1,7 @@
 import React from 'react';
+import '~/mdx-layout/dist/icons.css'
 
 import { Button } from './index';
-import './icons.css';
 
 export default {
   parameters: {

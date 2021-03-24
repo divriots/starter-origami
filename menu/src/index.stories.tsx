@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu } from './index';
+import '~/mdx-layout/dist/icons.css';
 import { View } from 'react-native';
 import { Divider, Provider } from 'react-native-paper';
 import { Button } from '~/button';

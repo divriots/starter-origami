@@ -4,6 +4,6 @@
 }
 
 @font-face {
-  src: url(https://unpkg.com/react-native-vector-icons@8.0.0/Fonts/MaterialIcons.ttf);
-  font-family: MaterialIcons;
+  src: url(https://unpkg.com/react-native-vector-icons@8.0.0/Fonts/MaterialCommunityIcons.ttf);
+  font-family: MaterialCommunityIcons;
 }

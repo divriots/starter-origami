@@ -1,4 +1,5 @@
 import React from 'react';
+import '~/mdx-layout/dist/icons.css';
 import { Modal } from './index';
 import { Button } from '~/button';
 import { Provider, Portal } from 'react-native-paper';
