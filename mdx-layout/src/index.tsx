@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
-import { CoreLayout, StylesheetSwitch } from '@divriots/dockit-react/mdx-layout-core';
+import {
+  CoreLayout,
+  StylesheetSwitch,
+} from '@divriots/dockit-react/mdx-layout-core';
 import { Playground } from '@divriots/dockit-react/playground';
 import { Showcases } from '@divriots/dockit-react/showcases';
 import { Props, Description } from '@divriots/dockit-react/props';
 import { createTheme } from '~/theme';
+import './icons.css';
 
 type ColorScheme = 'light' | 'dark';
 
@@ -23,7 +27,12 @@ export const Layout = (props) => {
           }}
           onSwitch={setScheme}
         />
-        <CoreLayout {...props} />
+        <CoreLayout
+          logo={
+            <img src="https://callstack.github.io/react-native-paper/images/sidebar-logo.svg" style={{ margin: '1rem' }} />
+          }
+          {...props}
+        />
       </MDXProvider>
     </PaperProvider>
   );

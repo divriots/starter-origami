@@ -1,0 +1,79 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import { Snackbar } from '../src/index';
+import { View } from 'react-native';
+import { Button } from '~/button';
+import { Layout } from '~/mdx-layout';
+
+export default Layout;
+
+# Snackbar
+
+### Description
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { Button, Snackbar } from 'react-native-paper';
+
+const MyComponent = () => {
+  const [visible, setVisible] = React.useState(false);
+
+  const onToggleSnackBar = () => setVisible(!visible);
+
+  const onDismissSnackBar = () => setVisible(false);
+
+  return (
+    <View style={styles.container}>
+      <Button onPress={onToggleSnackBar}>{visible ? 'Hide' : 'Show'}</Button>
+      <Snackbar
+        visible={visible}
+        onDismiss={onDismissSnackBar}
+        action={{
+          label: 'Undo',
+          onPress: () => {
+            // Do something
+          },
+        }}
+      >
+        Hey there! I'm a Snackbar.
+      </Snackbar>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+});
+
+export default MyComponent;
+```
+
+<Playground
+  scope={{ Snackbar, View, Button }}
+  code={`
+() => {
+  const [visible, setVisible] = React.useState(false);
+  const onToggleSnackBar = () => setVisible(!visible);
+  const onDismissSnackBar = () => setVisible(false);
+  return (
+    <View style={{ flex: 1, justifyContent: 'space-between'}}>
+      <Button onPress={onToggleSnackBar}>{visible ? 'Hide' : 'Show'}</Button>
+      <Snackbar
+        visible={visible}
+        onDismiss={onDismissSnackBar}
+        action={{ label: 'Undo', onPress: () => console.log('pressed') }}>
+        Hey there! I'm a Snackbar.
+      </Snackbar>
+    </View>
+  );
+};
+`}
+/>
+
+## Props

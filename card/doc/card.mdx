@@ -1,0 +1,57 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import { Card } from '../src/index';
+import { Button } from '~/button';
+import { Layout } from '~/mdx-layout';
+import { Playground } from '@divriots/dockit-react/playground';
+import { Props, Description } from '@divriots/dockit-react/props';
+export default Layout;
+
+# Card
+
+### Description
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+
+const LeftContent = props => <Avatar.Icon {...props} icon="folder" />
+
+const MyComponent = () => (
+  <Card>
+    <Card.Title title="Card Title" subtitle="Card Subtitle" left={LeftContent} />
+    <Card.Content>
+      <Title>Card title</Title>
+      <Paragraph>Card content</Paragraph>
+    </Card.Content>
+    <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
+    <Card.Actions>
+      <Button>Cancel</Button>
+      <Button>Ok</Button>
+    </Card.Actions>
+  </Card>
+);
+
+export default MyComponent;
+```
+
+<Playground
+  scope={{ Card, Button }}
+  code={`
+<Card style={{ width: '30rem' }}>
+  <Card.Title title="Card Title" subtitle="Card Subtitle" />
+  <Card.Content>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </Card.Content>
+  <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
+  <Card.Actions>
+    <Button>Cancel</Button>
+    <Button>Ok</Button>
+  </Card.Actions>
+</Card>
+`}
+/>
+
+## Props

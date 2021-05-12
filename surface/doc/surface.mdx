@@ -1,0 +1,49 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import { Surface } from '../src/index';
+import { Text } from 'react-native-paper';
+import { Layout } from '~/mdx-layout';
+
+export default Layout;
+
+# Surface
+
+### Description
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import { Surface, Text } from 'react-native-paper';
+import { StyleSheet } from 'react-native';
+
+const MyComponent = () => (
+  <Surface style={styles.surface}>
+    <Text>Surface</Text>
+  </Surface>
+);
+
+export default MyComponent;
+
+const styles = StyleSheet.create({
+  surface: {
+    padding: 8,
+    height: 80,
+    width: 80,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 4,
+  },
+});
+```
+
+<Playground
+  scope={{ Surface, Text }}
+  code={`
+<Surface style={{ padding: '3rem'}}>
+  <Text>Surface</Text>
+</Surface>
+`}
+/>
+
+## Props

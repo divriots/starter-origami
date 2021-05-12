@@ -1,0 +1,39 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import { Switch } from '../src/index';
+import { Layout } from '~/mdx-layout';
+
+export default Layout;
+
+# Switch
+
+### Description
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import { Switch } from 'react-native-paper';
+
+const MyComponent = () => {
+  const [isSwitchOn, setIsSwitchOn] = React.useState(false);
+  const onToggleSwitch = () => setIsSwitchOn(!isSwitchOn);
+
+  return <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />;
+};
+
+export default MyComponent;
+```
+
+<Playground
+  scope={{ Switch }}
+  code={`
+() => {
+  const [isSwitchOn, setIsSwitchOn] = React.useState(false);
+  const onToggleSwitch = () => setIsSwitchOn(!isSwitchOn);
+  return <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />;
+};
+`}
+/>
+
+## Props

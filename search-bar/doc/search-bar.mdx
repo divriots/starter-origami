@@ -1,0 +1,51 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import { Searchbar } from '../src/index';
+import { Layout } from '~/mdx-layout';
+
+export default Layout;
+
+# Snackbar
+
+### Description
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import { Searchbar } from 'react-native-paper';
+
+const MyComponent = () => {
+  const [searchQuery, setSearchQuery] = React.useState('');
+
+  const onChangeSearch = (query) => setSearchQuery(query);
+
+  return (
+    <Searchbar
+      placeholder="Search"
+      onChangeText={onChangeSearch}
+      value={searchQuery}
+    />
+  );
+};
+
+export default MyComponent;
+```
+
+<Playground
+  scope={{ Searchbar }}
+  code={`
+() => {
+  const [searchQuery, setSearchQuery] = React.useState('');
+  return (
+    <Searchbar
+      placeholder="Search"
+      onChangeText={setSearchQuery}
+      value={searchQuery}
+    />
+  );
+};
+`}
+/>
+
+## Props

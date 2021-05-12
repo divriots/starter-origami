@@ -1,0 +1,45 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import { TouchableRipple } from '../src/index';
+import { Text } from 'react-native-paper';
+import { Layout } from '~/mdx-layout';
+
+export default Layout;
+
+# TocuhableRipple
+
+### Description
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import { View } from 'react-native';
+import { Text, TouchableRipple } from 'react-native-paper';
+
+const MyComponent = () => (
+  <TouchableRipple
+    onPress={() => console.log('Pressed')}
+    rippleColor="rgba(0, 0, 0, .32)"
+  >
+    <Text>Press anywhere</Text>
+  </TouchableRipple>
+);
+
+export default MyComponent;
+```
+
+<Playground
+  scope={{ TouchableRipple, Text }}
+  code={`
+<TouchableRipple
+  style={{ padding: '20rem'}}
+  onPress={() => console.log('Pressed')}
+  rippleColor="rgba(0, 0, 0, .32)"
+>
+  <Text>Press anywhere</Text>
+</TouchableRipple>
+`}
+/>
+
+## Props

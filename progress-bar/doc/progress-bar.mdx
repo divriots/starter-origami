@@ -1,0 +1,32 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import { ProgressBar } from '../src/index';
+import { Layout } from '~/mdx-layout';
+
+export default Layout;
+
+# ProgressBar
+
+### Description
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import { ProgressBar, Colors } from 'react-native-paper';
+
+const MyComponent = () => (
+  <ProgressBar progress={0.5} color={Colors.red800} />
+);
+
+export default MyComponent;
+```
+
+<Playground
+  scope={{ ProgressBar }}
+  code={`
+<ProgressBar progress={0.5} />
+`}
+/>
+
+## Props

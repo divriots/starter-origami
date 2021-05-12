@@ -13,15 +13,49 @@
         ]
       ],
       [
+        "components",
+        [
+          "activity-indicator",
+          "appbar",
+          "button",
+          "badge",
+          "banner",
+          "bottom-navigation",
+          "card",
+          "checkbox",
+          "chip",
+          "data-table",
+          "dialog",
+          "drawer",
+          "fab",
+          "helper-text",
+          "icon-button",
+          "list",
+          "menu",
+          "modal",
+          "progress-bar",
+          "radio-button",
+          "search-bar",
+          "snackbar",
+          "surface",
+          "switch",
+          "text-input",
+          "toggle-button",
+          "touchable-ripple",
+          "typography"
+        ]
+      ],
+      [
         "infrastructure",
         [
           "theme"
         ]
       ],
       [
-        "layout",
+        "dockit",
         [
-          "mdx-layout"
+          "mdx-layout",
+          "showcases"
         ]
       ]
     ]

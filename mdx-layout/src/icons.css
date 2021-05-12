@@ -1,0 +1,9 @@
+@font-face {
+  src: url(https://unpkg.com/react-native-vector-icons@8.0.0/Fonts/FontAwesome.ttf);
+  font-family: FontAwesome;
+}
+
+@font-face {
+  src: url(https://unpkg.com/react-native-vector-icons@8.0.0/Fonts/MaterialCommunityIcons.ttf);
+  font-family: MaterialCommunityIcons;
+}

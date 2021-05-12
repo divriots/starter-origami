@@ -1,0 +1,52 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import { ToggleButton } from '../src/index';
+import { Layout } from '~/mdx-layout';
+
+export default Layout;
+
+# ToggleButton
+
+### Description
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import { ToggleButton } from 'react-native-paper';
+
+const MyComponent = () => {
+  const [value, setValue] = React.useState('left');
+
+  return (
+    <ToggleButton.Group
+      onValueChange={(value) => setValue(value)}
+      value={value}
+    >
+      <ToggleButton icon="format-align-left" value="left" />
+      <ToggleButton icon="format-align-right" value="right" />
+    </ToggleButton.Group>
+  );
+};
+
+export default MyComponent;
+```
+
+<Playground
+  scope={{ ToggleButton }}
+  code={`
+() => {
+  const [value, setValue] = React.useState('left');
+  return (
+    <ToggleButton.Group
+      onValueChange={value => setValue(value)}
+      value={value}>
+      <ToggleButton icon="format-align-left" value="left" />
+      <ToggleButton icon="format-align-right" value="right" />
+    </ToggleButton.Group>
+  );
+};
+`}
+/>
+
+## Props

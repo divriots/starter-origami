@@ -1,0 +1,41 @@
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+import { TextInput } from '../src/index';
+import { Layout } from '~/mdx-layout';
+
+export default Layout;
+
+# TextInput
+
+### Description
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import { TextInput } from 'react-native-paper';
+
+const MyComponent = () => {
+  const [text, setText] = React.useState('');
+
+  return (
+    <TextInput
+      label="Email"
+      value={text}
+      onChangeText={(text) => setText(text)}
+    />
+  );
+};
+
+export default MyComponent;
+```
+
+<Playground
+  scope={{ TextInput }}
+  code={`
+<TextInput label="Email" />
+<TextInput mode="outlined" label="Email" />
+`}
+/>
+
+## Props
