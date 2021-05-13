@@ -1,4 +1,5 @@
 import React from 'react';
+import '@babel/runtime';
 import { View, Text, ViewStyle, TextStyle } from 'react-native';
 import { light, dark } from '~/colors';
 import { useTheme } from 'react-native-paper';
