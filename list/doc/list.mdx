@@ -2,8 +2,9 @@ import React from 'react';
 import { mdx } from '@mdx-js/react';
 import { List } from '../src/index';
 import { Playground } from '@divriots/dockit-react/playground';
-import { Props, Description } from '@divriots/dockit-react/props';
-import { Layout } from '~/mdx-layout';
+
+import { Layout } from '~/layout';
+
 export default Layout;
 
 # List
@@ -26,16 +27,18 @@ const MyComponent = () => {
       <List.Section title="Accordions">
         <List.Accordion
           title="Uncontrolled Accordion"
-          left={props => <List.Icon {...props} icon="folder" />}>
+          left={(props) => <List.Icon {...props} icon="folder" />}
+        >
           <List.Item title="First item" />
           <List.Item title="Second item" />
         </List.Accordion>
 
         <List.Accordion
           title="Controlled Accordion"
-          left={props => <List.Icon {...props} icon="folder" />}
+          left={(props) => <List.Icon {...props} icon="folder" />}
           expanded={expanded}
-          onPress={handlePress}>
+          onPress={handlePress}
+        >
           <List.Item title="First item" />
           <List.Item title="Second item" />
         </List.Accordion>
@@ -49,7 +52,8 @@ const MyComponent = () => {
         </List.Accordion>
         <View>
           <Text>
-            List.Accordion can be wrapped because implementation uses React.Context.
+            List.Accordion can be wrapped because implementation uses
+            React.Context.
           </Text>
           <List.Accordion title="Accordion 3" id="3">
             <List.Item title="Item 3" />
@@ -65,17 +69,20 @@ const MyComponent = () => {
         <List.Item
           title="First Item"
           description="Item description"
-          left={props => <List.Icon {...props} icon="folder" />}
+          left={(props) => <List.Icon {...props} icon="folder" />}
         />
         <List.Item
           title="Second Item"
           description="Item description"
-          left={props => <List.Icon {...props} icon="folder" />}
+          left={(props) => <List.Icon {...props} icon="folder" />}
         />
       </>
       <List.Section>
         <List.Subheader>Some title</List.Subheader>
-        <List.Item title="First Item" left={() => <List.Icon icon="folder" />} />
+        <List.Item
+          title="First Item"
+          left={() => <List.Icon icon="folder" />}
+        />
         <List.Item
           title="Second Item"
           left={() => <List.Icon color="#000" icon="folder" />}

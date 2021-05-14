@@ -1,9 +1,9 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
 import { Button } from '../src/index';
-import { Layout } from '~/mdx-layout';
 import { Playground } from '@divriots/dockit-react/playground';
-import { Props, Description } from '@divriots/dockit-react/props';
+import { Layout } from '~/layout';
+
 export default Layout;
 
 # Button
@@ -17,18 +17,13 @@ import * as React from 'react';
 import { Button } from 'react-native-paper';
 
 const MyComponent = () => (
-  <Button
-    icon="camera"
-    mode="contained"
-    onPress={() => console.log('Pressed')}
-  >
+  <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
     Press me
   </Button>
 );
 
 export default MyComponent;
 ```
-
 
 <Playground
   scope={{ Button }}
@@ -42,19 +37,51 @@ export default MyComponent;
 ### Text Button
 
 <Button style={{ margin: '0.5rem', width: '12rem' }}>Default</Button>
-<Button style={{ margin: '0.5rem', width: '12rem' }} icon="camera">Default</Button>
-<Button style={{ margin: '0.5rem', width: '12rem' }} loading={true}>Default</Button>
+<Button style={{ margin: '0.5rem', width: '12rem' }} icon="camera">
+  Default
+</Button>
+<Button style={{ margin: '0.5rem', width: '12rem' }} loading={true}>
+  Default
+</Button>
 
 ### Outlined Button
 
-<Button style={{ margin: '0.5rem', width: '12rem' }} mode="outlined">Outlined</Button>
-<Button style={{ margin: '0.5rem', width: '12rem' }} mode="outlined" icon="camera">Outlined</Button>
-<Button style={{ margin: '0.5rem', width: '12rem' }} mode="outlined" loading={true}>Outlined</Button>
+<Button style={{ margin: '0.5rem', width: '12rem' }} mode="outlined">
+  Outlined
+</Button>
+<Button
+  style={{ margin: '0.5rem', width: '12rem' }}
+  mode="outlined"
+  icon="camera"
+>
+  Outlined
+</Button>
+<Button
+  style={{ margin: '0.5rem', width: '12rem' }}
+  mode="outlined"
+  loading={true}
+>
+  Outlined
+</Button>
 
 ### Contained Button
 
-<Button style={{ margin: '0.5rem', width: '12rem' }} mode="contained">Contained</Button>
-<Button style={{ margin: '0.5rem', width: '12rem' }} mode="contained" icon="camera">Contained</Button>
-<Button style={{ margin: '0.5rem', width: '12rem' }} mode="contained" loading={true}>Contained</Button>
+<Button style={{ margin: '0.5rem', width: '12rem' }} mode="contained">
+  Contained
+</Button>
+<Button
+  style={{ margin: '0.5rem', width: '12rem' }}
+  mode="contained"
+  icon="camera"
+>
+  Contained
+</Button>
+<Button
+  style={{ margin: '0.5rem', width: '12rem' }}
+  mode="contained"
+  loading={true}
+>
+  Contained
+</Button>
 
 ## Props
