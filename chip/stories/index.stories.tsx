@@ -1,5 +1,4 @@
-import React from 'react';
-import '~/mdx-layout/dist/icons.css';
+import React from 'react';;
 import { Chip } from '../index';
 import { storyLayout } from '~/layout';
 

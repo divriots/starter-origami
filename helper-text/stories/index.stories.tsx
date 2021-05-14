@@ -1,5 +1,4 @@
-import React from 'react';
-import '~/mdx-layout/dist/icons.css';
+import React from 'react';;
 import { View } from 'react-native';
 import { TextInput } from '~/text-input';
 import { HelperText } from '../index';

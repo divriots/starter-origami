@@ -1,5 +1,4 @@
 import React from 'react';
-import '~/mdx-layout/dist/icons.css'
 import { Card } from '../index';
 import { Button } from '~/button';
 import { storyLayout } from '~/layout';

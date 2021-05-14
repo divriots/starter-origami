@@ -1,5 +1,4 @@
 import React from 'react';
-import '~/mdx-layout/dist/icons.css'
 import { BottomNavigation } from '../index';
 import { storyLayout } from '~/layout';
 

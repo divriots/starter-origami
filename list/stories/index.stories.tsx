@@ -1,5 +1,4 @@
-import React from 'react';
-import '~/mdx-layout/dist/icons.css';
+import React from 'react';;
 import { View, Text } from 'react-native';
 import { List } from '../index';
 import { storyLayout } from '~/layout';

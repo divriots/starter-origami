@@ -1,5 +1,4 @@
 import React from 'react';
-import '~/layout/dist/icons.css'
 
 import { Appbar } from '../index';
 import { storyLayout } from '~/layout';

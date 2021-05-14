@@ -1,5 +1,4 @@
-import React from 'react';
-import '~/mdx-layout/dist/icons.css';
+import React from 'react';;
 import { TouchableRipple } from '../index';
 import { Text } from 'react-native-paper';
 import { storyLayout } from '~/layout';

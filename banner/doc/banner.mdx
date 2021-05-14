@@ -60,7 +60,7 @@ export default MyComponent;
 () => {
   const [visible, setVisible] = React.useState(true);
   return (
-    <div>
+    <>
       <Banner
         visible={visible}
         actions={[
@@ -82,7 +82,7 @@ export default MyComponent;
         There was a problem processing a transaction on your credit card.
       </Banner>
       {<Button onPress={() => setVisible(!visible)}>{visible ? 'Hide Banner' : 'Show Banner'}</Button>}
-    </div >
+    </>
   );
 };
 `}

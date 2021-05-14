@@ -1,5 +1,4 @@
-import React from 'react';
-import '~/mdx-layout/dist/icons.css';
+import React from 'react';;
 import { Dialog } from '../index';
 import { Button } from '~/button';
 import { Portal, Provider } from 'react-native-paper';
