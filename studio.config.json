@@ -54,7 +54,7 @@
       [
         "dockit",
         [
-          "mdx-layout",
+          "layout",
           "showcases"
         ]
       ]

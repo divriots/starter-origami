@@ -1,9 +1,9 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
 import { Appbar } from '../src/index';
-import { Layout } from '~/mdx-layout';
 import { Playground } from '@divriots/dockit-react/playground';
-import { Props, Description } from '@divriots/dockit-react/props';
+import { Layout } from '~/layout';
+
 export default Layout;
 
 # Appbar
@@ -18,10 +18,10 @@ import { Appbar } from 'react-native-paper';
 import { StyleSheet } from 'react-native';
 
 const MyComponent = () => (
- <Appbar style={styles.bottom}>
-   <Appbar.Action
-     icon="archive"
-     onPress={() => console.log('Pressed archive')}
+  <Appbar style={styles.bottom}>
+    <Appbar.Action
+      icon="archive"
+      onPress={() => console.log('Pressed archive')}
     />
     <Appbar.Action icon="mail" onPress={() => console.log('Pressed mail')} />
     <Appbar.Action icon="label" onPress={() => console.log('Pressed label')} />
@@ -30,9 +30,9 @@ const MyComponent = () => (
       onPress={() => console.log('Pressed delete')}
     />
   </Appbar>
- );
+);
 
-export default MyComponent
+export default MyComponent;
 
 const styles = StyleSheet.create({
   bottom: {
@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
   },
 });
 ```
-
 
 <Playground
   scope={{ Appbar }}

@@ -1,4 +1,5 @@
 import 'react-native';
+import '@babel/runtime';
 import { DefaultTheme, configureFonts } from 'react-native-paper';
 import { fontConfig } from '~/fonts';
 import { light, dark } from '~/colors';
