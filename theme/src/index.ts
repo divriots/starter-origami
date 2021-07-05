@@ -1,7 +1,7 @@
 import 'react-native';
 import '@babel/runtime';
 import { DefaultTheme, configureFonts } from 'react-native-paper';
-import { fontConfig } from '~/fonts';
+import { fontConfig } from '~/typography';
 import { light, dark } from '~/colors';
 import { roundness } from '~/roundness';
 import { animation } from '~/animation';

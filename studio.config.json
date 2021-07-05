@@ -4,12 +4,13 @@
     "menu": [
       "introduction",
       [
-        "theme",
+        "tokens",
         [
-          "fonts",
+          "typography",
           "colors",
           "roundness",
-          "animation"
+          "animation",
+          "theme"
         ]
       ],
       [
@@ -43,12 +44,6 @@
           "toggle-button",
           "touchable-ripple",
           "typography"
-        ]
-      ],
-      [
-        "infrastructure",
-        [
-          "theme"
         ]
       ],
       [

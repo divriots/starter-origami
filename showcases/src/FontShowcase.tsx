@@ -1,5 +1,4 @@
 import React from 'react';
-import { fontConfig } from '~/fonts';
 
 const Definitions = ({
   osName,
@@ -26,7 +25,7 @@ const Definitions = ({
   </>
 );
 
-export const FontShowcase = () => (
+export const FontShowcase = ({ fontConfig }) => (
   <table>
     <thead>
       <tr>
