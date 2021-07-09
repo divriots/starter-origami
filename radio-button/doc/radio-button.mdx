@@ -1,21 +1,22 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { RadioButton } from '../src/index';
+import { RadioButton } from '~/radio-button';
 import { View } from 'react-native';
 import { Layout } from '~/layout';
+import { Playground } from '@divriots/dockit-react/playground';
 
 export default Layout;
 
 # RadioButton
 
-### Description
+Radio buttons allow the selection a single option from a set.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
 import { View } from 'react-native';
-import { RadioButton } from 'react-native-paper';
+import { RadioButton } from '@divriots/starter-reactnative-paper/radio-button';
 
 const MyComponent = () => {
   const [checked, setChecked] = React.useState('first');
@@ -35,8 +36,6 @@ const MyComponent = () => {
     </View>
   );
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -61,5 +60,3 @@ export default MyComponent;
 };
 `}
 />
-
-## Props

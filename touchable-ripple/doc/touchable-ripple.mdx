@@ -1,21 +1,23 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { TouchableRipple } from '../src/index';
-import { Text } from 'react-native-paper';
+import { TouchableRipple } from '~/touchable-ripple';
+import { Text } from '~/typography';
+import { Playground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
 
 export default Layout;
 
 # TocuhableRipple
 
-### Description
+A wrapper for views that should respond to touches. Provides a material "ink ripple" interaction effect for supported platforms (>= Android Lollipop). On unsupported platforms, it falls back to a highlight effect.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
 import { View } from 'react-native';
-import { Text, TouchableRipple } from 'react-native-paper';
+import { Text } from '@divriots/starter-reactnative-paper/typography';
+import { TouchableRipple } from '@divriots/starter-reactnative-paper/touchable-ripple';
 
 const MyComponent = () => (
   <TouchableRipple
@@ -25,8 +27,6 @@ const MyComponent = () => (
     <Text>Press anywhere</Text>
   </TouchableRipple>
 );
-
-export default MyComponent;
 ```
 
 <Playground
@@ -37,9 +37,7 @@ export default MyComponent;
   onPress={() => console.log('Pressed')}
   rippleColor="rgba(0, 0, 0, .32)"
 >
-  <Text>Press anywhere</Text>
+  <Text style={{ width: '10rem' }}>Press anywhere</Text>
 </TouchableRipple>
 `}
 />
-
-## Props

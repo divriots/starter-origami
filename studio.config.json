@@ -2,11 +2,11 @@
   "packages": {
     "dir": "",
     "menu": [
-      "introduction",
+      "readme",
       [
         "tokens",
         [
-          "typography",
+          "fonts",
           "colors",
           "roundness",
           "animation",

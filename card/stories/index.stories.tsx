@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from '../index';
+import { Card } from '~/card';
 import { Button } from '~/button';
 import { storyLayout } from '~/layout';
 

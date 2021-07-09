@@ -1,1 +1,1 @@
-export * from './menu';
+export { Menu } from 'react-native-paper';

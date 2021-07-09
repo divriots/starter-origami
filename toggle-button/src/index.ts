@@ -1,1 +1,2 @@
-export * from './toggle-button';
+export { ToggleButton } from 'react-native-paper';
+

@@ -1,5 +1,5 @@
 import React from 'react';;
-import { Searchbar } from '../index';
+import { Searchbar } from '~/search-bar';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;
@@ -13,6 +13,6 @@ const SearchbarShowcase = () => {
       value={searchQuery}
     />
   );
-}
+};
 
 export const search_bar = () => <SearchbarShowcase />;

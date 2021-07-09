@@ -1,20 +1,22 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Surface } from '../src/index';
-import { Text } from 'react-native-paper';
+import { Surface } from '~/surface';
+import { Text } from '~/typography';
 import { Layout } from '~/layout';
+import { Playground } from '@divriots/dockit-react/playground';
 
 export default Layout;
 
 # Surface
 
-### Description
+Surface is a basic container that can give depth to an element with elevation shadow. On dark theme with adaptive mode, surface is constructed by also placing a semi-transparent white overlay over a component surface. See Dark Theme for more information. Overlay and shadow can be applied by specifying the elevation property both on Android and iOS.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { Surface, Text } from 'react-native-paper';
+import { Surface } from '@divriots/starter-reactnative-paper/suface';
+import { Text } from '@divriots/starter-reactnative-paper/text';
 import { StyleSheet } from 'react-native';
 
 const MyComponent = () => (
@@ -22,8 +24,6 @@ const MyComponent = () => (
     <Text>Surface</Text>
   </Surface>
 );
-
-export default MyComponent;
 
 const styles = StyleSheet.create({
   surface: {
@@ -45,5 +45,3 @@ const styles = StyleSheet.create({
 </Surface>
 `}
 />
-
-## Props

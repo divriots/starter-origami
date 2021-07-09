@@ -1,19 +1,20 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Switch } from '../src/index';
+import { Switch } from '~/switch';
 import { Layout } from '~/layout';
+import { Playground } from '@divriots/dockit-react/playground';
 
 export default Layout;
 
 # Switch
 
-### Description
+Switch is a visual toggle between two mutually exclusive states — on and off.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { Switch } from 'react-native-paper';
+import { Switch } from '@divriots/starter-reactnative-paper/switch';
 
 const MyComponent = () => {
   const [isSwitchOn, setIsSwitchOn] = React.useState(false);
@@ -21,8 +22,6 @@ const MyComponent = () => {
 
   return <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />;
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -35,5 +34,3 @@ export default MyComponent;
 };
 `}
 />
-
-## Props

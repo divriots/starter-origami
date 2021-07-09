@@ -1,1 +1,1 @@
-export * from './appbar';
+export { Appbar } from 'react-native-paper';

@@ -1,1 +1,1 @@
-export * from './helper-text';
+export { HelperText } from 'react-native-paper';

@@ -1,23 +1,22 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { ProgressBar } from '../src/index';
+import { ProgressBar } from '~/progress-bar';
 import { Layout } from '~/layout';
+import { Playground } from '@divriots/dockit-react/playground';
 
 export default Layout;
 
 # ProgressBar
 
-### Description
+Progress bar is an indicator used to present progress of some activity in the app.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { ProgressBar, Colors } from 'react-native-paper';
+import { ProgressBar } from '@divriots/starter-reactnative-paper/progress-bar';
 
-const MyComponent = () => <ProgressBar progress={0.5} color={Colors.red800} />;
-
-export default MyComponent;
+const MyComponent = () => <ProgressBar progress={0.5} color="#FE442D" />;
 ```
 
 <Playground
@@ -26,5 +25,3 @@ export default MyComponent;
 <ProgressBar progress={0.5} />
 `}
 />
-
-## Props

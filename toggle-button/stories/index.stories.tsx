@@ -1,5 +1,5 @@
 import React from 'react';;
-import { ToggleButton } from '../index';
+import { ToggleButton } from '~/toggle-button';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;
@@ -16,4 +16,4 @@ const ToggleGroupShowcase = () => {
   );
 };
 
-export const toggle_button = () => <ToggleGroupShowcase />
+export const toggle_button = () => <ToggleGroupShowcase />;

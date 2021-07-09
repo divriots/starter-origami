@@ -1,5 +1,5 @@
 import React from 'react';;
-import { ProgressBar } from '../index';
+import { ProgressBar } from '~/progress-bar';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;

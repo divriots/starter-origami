@@ -1,19 +1,20 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { ToggleButton } from '../src/index';
+import { ToggleButton } from '~/toggle-button';
+import { Playground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
 
 export default Layout;
 
 # ToggleButton
 
-### Description
+Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { ToggleButton } from 'react-native-paper';
+import { ToggleButton } from '@divriots/starter-reactnative-paper/toogle-button';
 
 const MyComponent = () => {
   const [value, setValue] = React.useState('left');
@@ -28,8 +29,6 @@ const MyComponent = () => {
     </ToggleButton.Group>
   );
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -48,5 +47,3 @@ export default MyComponent;
 };
 `}
 />
-
-## Props

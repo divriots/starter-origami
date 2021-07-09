@@ -1,1 +1,2 @@
-export * from './text-input';
+export { TextInput } from 'react-native-paper';
+

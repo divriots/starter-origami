@@ -1,5 +1,5 @@
-import React from 'react';;
-import { Snackbar } from '../index';
+import React from 'react';
+import { Snackbar } from '~/snackbar';
 import { Button } from '~/button';
 import { View } from 'react-native';
 import { storyLayout } from '~/layout';
@@ -11,7 +11,7 @@ const SnackbarShowcase = () => {
   const onToggleSnackBar = () => setVisible(!visible);
   const onDismissSnackBar = () => setVisible(false);
   return (
-    <View style={{ flex: 1, justifyContent: 'space-between', height: '10rem' }}>
+    <View style={{ flex: 1, justifyContent: 'space-between', height: '10rem', width: '30rem' }}>
       <Button onPress={onToggleSnackBar}>{visible ? 'Hide' : 'Show'}</Button>
       <Snackbar
         visible={visible}

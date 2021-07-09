@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Badge } from '../src/index';
+import { Badge } from '~/badge';
 import { Playground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
 
@@ -8,19 +8,15 @@ export default Layout;
 
 # Badge
 
-### Description
+Badges are small status descriptors for UI elements. A badge consists of a small circle, typically containing a number or other short set of characters, that appears in proximity to another object.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { Badge } from 'react-native-paper';
+import { Badge } from '@divriots/starter-reactnative-paper/badge';
 
 const MyComponent = () => <Badge>3</Badge>;
-
-export default MyComponent;
 ```
 
 <Playground scope={{ Badge }} code={`<Badge>3</Badge>`} />
-
-## Props

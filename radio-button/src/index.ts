@@ -1,1 +1,2 @@
-export * from './radio-button';
+export { RadioButton } from 'react-native-paper';
+

@@ -1,1 +1,1 @@
-export * from './list';
+export { List } from 'react-native-paper';

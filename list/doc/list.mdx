@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { List } from '../src/index';
+import { List } from '~/list';
 import { Playground } from '@divriots/dockit-react/playground';
 
 import { Layout } from '~/layout';
@@ -9,13 +9,13 @@ export default Layout;
 
 # List
 
-### Description
+A component used to list items.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { List } from 'react-native-paper';
+import { List } from '@divriots/starter-reactnative-paper/list';
 
 const MyComponent = () => {
   const [expanded, setExpanded] = React.useState(true);
@@ -91,8 +91,6 @@ const MyComponent = () => {
     </>
   );
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -122,5 +120,3 @@ export default MyComponent;
 };
 `}
 />
-
-## Props

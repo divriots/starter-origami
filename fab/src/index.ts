@@ -1,1 +1,1 @@
-export * from './FAB';
+export { FAB } from 'react-native-paper';

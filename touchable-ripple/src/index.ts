@@ -1,1 +1,2 @@
-export * from './touchable-ripple';
+export { TouchableRipple } from 'react-native-paper';
+

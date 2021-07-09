@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { BottomNavigation } from '../src/index';
+import { BottomNavigation } from '~/bottom-navigation';
 import { Button } from '~/button';
 import { Playground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
@@ -9,13 +9,14 @@ export default Layout;
 
 # Bottom Navigation
 
-### Description
+Bottom navigation provides quick navigation between top-level views of an app with a bottom navigation bar. It is primarily designed for use on mobile.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { BottomNavigation, Text } from 'react-native-paper';
+import { Text } from '@divriots/starter-reactnative-paper/typography';
+import { BottomNavigation } from '@divriots/starter-reactnative-paper/bottom-navigation';
 
 const MusicRoute = () => <Text>Music</Text>;
 
@@ -45,8 +46,6 @@ const MyComponent = () => {
     />
   );
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -69,5 +68,3 @@ export default MyComponent;
 };
 `}
 />
-
-## Props

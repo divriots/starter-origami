@@ -1,10 +1,9 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Modal } from '../src/index';
+import { Modal } from '~/modal';
 import { Button } from '~/button';
 import { Text } from '~/typography';
 import { Playground } from '@divriots/dockit-react/playground';
-
 import { useTheme } from 'react-native-paper';
 import { Layout } from '~/layout';
 
@@ -12,13 +11,16 @@ export default Layout;
 
 # Modal
 
-### Description
+The Modal component is a simple way to present content above an enclosing view. To render the Modal above other components, you'll need to wrap it with the Portal component.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { Modal, Portal, Text, Button, Provider } from 'react-native-paper';
+import { Modal } from '@divriots/starter-reactnative-paper/modal';
+import { Portal, Provider } from 'react-native-paper';
+import { Text } from '@divriots/starter-reactnative-paper/typography';
+import { Button } from '@divriots/starter-reactnative-paper/button';
 
 const MyComponent = () => {
   const [visible, setVisible] = React.useState(false);
@@ -44,8 +46,6 @@ const MyComponent = () => {
     </Provider>
   );
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -75,5 +75,3 @@ export default MyComponent;
 };
 `}
 />
-
-## Props

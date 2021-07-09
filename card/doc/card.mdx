@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Card } from '../src/index';
+import { Card } from '~/card';
 import { Button } from '~/button';
 import { Playground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
@@ -9,13 +9,19 @@ export default Layout;
 
 # Card
 
-### Description
+A card is a sheet of material that serves as an entry point to more detailed information.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import { Avatar } from '@divriots/starter-reactnative-paper/avatar';
+import { Button } from '@divriots/starter-reactnative-paper/button';
+import { Card } from '@divriots/starter-reactnative-paper/card';
+import {
+  Title,
+  Paragraph,
+} from '@divriots/starter-reactnative-paper/typography';
 
 const LeftContent = (props) => <Avatar.Icon {...props} icon="folder" />;
 
@@ -37,8 +43,6 @@ const MyComponent = () => (
     </Card.Actions>
   </Card>
 );
-
-export default MyComponent;
 ```
 
 <Playground
@@ -57,5 +61,3 @@ export default MyComponent;
 </Card>
 `}
 />
-
-## Props

@@ -1,1 +1,1 @@
-export * from './snackbar';
+export { Snackbar } from 'react-native-paper';

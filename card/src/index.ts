@@ -1,1 +1,1 @@
-export * from './card';
+export { Card } from 'react-native-paper';

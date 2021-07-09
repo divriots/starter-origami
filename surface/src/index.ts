@@ -1,1 +1,2 @@
-export * from './surface';
+export { Surface } from 'react-native-paper';
+

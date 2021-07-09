@@ -1,5 +1,5 @@
 import React from 'react';
-import { BottomNavigation } from '../index';
+import { BottomNavigation } from '~/bottom-navigation';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;
@@ -16,7 +16,8 @@ const BottomNavigationShowcase = () => {
     <BottomNavigation
       navigationState={{ index, routes }}
       onIndexChange={setIndex}
-      renderScene={() => { }}
+      renderScene={() => <></>}
+      style={{ width: '25rem' }}
     />
   );
 };

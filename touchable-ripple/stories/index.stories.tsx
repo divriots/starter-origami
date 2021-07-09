@@ -1,5 +1,5 @@
-import React from 'react';;
-import { TouchableRipple } from '../index';
+import React from 'react';
+import { TouchableRipple } from '~/touchable-ripple';
 import { Text } from 'react-native-paper';
 import { storyLayout } from '~/layout';
 

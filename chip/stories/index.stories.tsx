@@ -1,5 +1,5 @@
 import React from 'react';;
-import { Chip } from '../index';
+import { Chip } from '~/chip';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;

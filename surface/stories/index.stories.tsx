@@ -1,5 +1,5 @@
 import React from 'react';;
-import { Surface } from '../index';
+import { Surface } from '~/surface';
 import { Text } from 'react-native-paper';
 import { storyLayout } from '~/layout';
 
