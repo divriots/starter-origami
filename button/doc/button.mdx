@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Button } from '../src/index';
+import { Button } from '~/button';
 import { Playground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
 
@@ -8,21 +8,19 @@ export default Layout;
 
 # Button
 
-### Description
+A button is component that the user can press to trigger an action.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { Button } from 'react-native-paper';
+import { Button } from '@divriots/starter-reactnative-paper/button';
 
 const MyComponent = () => (
   <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
     Press me
   </Button>
 );
-
-export default MyComponent;
 ```
 
 <Playground
@@ -83,5 +81,3 @@ export default MyComponent;
 >
   Contained
 </Button>
-
-## Props

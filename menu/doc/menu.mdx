@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Menu } from '../src/index';
+import { Menu } from '~/menu';
 import { Button } from '~/button';
 import { Divider } from 'react-native-paper';
 import { View } from 'react-native';
@@ -12,14 +12,16 @@ export default Layout;
 
 # Menu
 
-### Description
+Menus display a list of choices on temporary elevated surfaces. Their placement varies based on the element that opens them.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
 import { View } from 'react-native';
-import { Button, Menu, Divider, Provider } from 'react-native-paper';
+import { Divider, Provider } from 'react-native-paper';
+import { Button } from '@divriots/starter-reactnative-paper/button';
+import { Menu } from '@divriots/starter-reactnative-paper/menu';
 
 const MyComponent = () => {
   const [visible, setVisible] = React.useState(false);
@@ -51,8 +53,6 @@ const MyComponent = () => {
     </Provider>
   );
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -83,5 +83,3 @@ export default MyComponent;
 };
 `}
 />
-
-## Props

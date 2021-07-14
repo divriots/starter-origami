@@ -19,19 +19,19 @@ export const fontConfig = {
   },
   ios: {
     regular: {
-      fontFamily: 'System, Roboto',
+      fontFamily: 'System, Roboto, sans-serif',
       fontWeight: '400' as '400',
     },
     medium: {
-      fontFamily: 'System, Roboto',
+      fontFamily: 'System, Roboto, sans-serif',
       fontWeight: '500' as '500',
     },
     light: {
-      fontFamily: 'System, Roboto',
+      fontFamily: 'System, Roboto, sans-serif',
       fontWeight: '300' as '300',
     },
     thin: {
-      fontFamily: 'System, Roboto',
+      fontFamily: 'System, Roboto, sans-serif',
       fontWeight: '100' as '100',
     },
   },

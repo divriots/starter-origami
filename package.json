@@ -1,18 +1,25 @@
 {
-  "name": "@divriots/starter-reactnative",
+  "name": "@divriots/starter-reactnative-paper",
   "version": "0.0.0",
   "description": "",
   "license": "ISC",
   "type": "module",
   "homepage": "{{ homepage }}",
   "scripts": {
-    "serve": "dsd-cli serve VvdVbvAaydq8hYLh7RLq --open"
+    "serve": "npx backlight serve VvdVbvAaydq8hYLh7RLq --open"
   },
   "dependencies": {
-    "@babel/runtime": "latest"
+    "@babel/runtime": "latest",
+    "@divriots/dockit-react": "^0.0.56",
+    "@types/react": "^17.0.14",
+    "@types/react-native": "^0.64.11",
+    "react": "latest",
+    "react-native": "latest",
+    "react-native-paper": "latest"
   },
   "devDependencies": {
-    "dsd-cli": "latest",
+    "@webcomponents-dev/json-element": "^1.3.2",
+    "babel-plugin-react-docgen": "^4.2.1",
     "prettier": "2.2.1"
   }
 }

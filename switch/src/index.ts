@@ -1,1 +1,2 @@
-export * from './switch';
+export { Switch } from 'react-native-paper';
+

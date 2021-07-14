@@ -1,5 +1,5 @@
 import React from 'react';;
-import { Switch } from '../index';
+import { Switch } from '~/switch';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;

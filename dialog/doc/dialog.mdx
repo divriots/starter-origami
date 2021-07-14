@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Dialog } from '../src/index';
+import { Dialog } from '~/dialog';
 import { Button } from '~/button';
 import { Portal, Provider } from 'react-native-paper';
 import { Paragraph } from '~/typography';
@@ -11,14 +11,17 @@ export default Layout;
 
 # Dialog
 
-### Description
+Dialogs inform users about a specific task and may contain critical information, require decisions, or involve multiple tasks. To render the Dialog above other components, you'll need to wrap it with the Portal component.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
 import { View } from 'react-native';
-import { Button, Paragraph, Dialog, Portal } from 'react-native-paper';
+import { Paragraph } from '@divriots/starter-reactnative-paper/typography';
+import { Button } from '@divriots/starter-reactnative-paper/button';
+import { Dialog } from '@divriots/starter-reactnative-paper/dialog';
+import { Portal } from 'react-native-paper';
 
 const MyComponent = () => {
   const [visible, setVisible] = React.useState(false);
@@ -44,8 +47,6 @@ const MyComponent = () => {
     </View>
   );
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -74,5 +75,3 @@ export default MyComponent;
 };
 `}
 />
-
-## Props

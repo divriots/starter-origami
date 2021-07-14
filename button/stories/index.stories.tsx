@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../index';
+import { Button } from '~/button';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;

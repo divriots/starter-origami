@@ -1,7 +1,7 @@
 import React from 'react';;
 import { View } from 'react-native';
 import { TextInput } from '~/text-input';
-import { HelperText } from '../index';
+import { HelperText } from '~/helper-text';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;

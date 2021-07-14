@@ -1,6 +1,6 @@
 import React from 'react';;
 import { View, Text } from 'react-native';
-import { List } from '../index';
+import { List } from '~/list';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;

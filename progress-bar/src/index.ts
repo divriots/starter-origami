@@ -1,1 +1,1 @@
-export * from './progress-bar';
+export { ProgressBar } from 'react-native-paper';

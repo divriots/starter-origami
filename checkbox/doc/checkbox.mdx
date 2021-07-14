@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Checkbox } from '../src/index';
+import { Checkbox } from '~/checkbox';
 import { Playground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
 
@@ -8,13 +8,13 @@ export default Layout;
 
 # Checkbox
 
-### Description
+Checkboxes allow the selection of multiple options from a set.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { Checkbox } from 'react-native-paper';
+import { Checkbox } from '@divriots/starter-reactnative-paper/checkbox';
 
 const MyComponent = () => {
   const [checked, setChecked] = React.useState(false);
@@ -28,8 +28,6 @@ const MyComponent = () => {
     />
   );
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -46,5 +44,3 @@ export default MyComponent;
 };
 `}
 />
-
-## Props

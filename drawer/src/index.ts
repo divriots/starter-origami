@@ -1,1 +1,1 @@
-export * from './drawer';
+export { Drawer } from 'react-native-paper';

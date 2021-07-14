@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Banner } from '../src/index';
+import { Banner } from '~/banner';
 import { Button } from '~/button';
 import { Playground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
@@ -9,14 +9,14 @@ export default Layout;
 
 # Banner
 
-### Description
+Banner displays a prominent message and related actions.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
 import { Image } from 'react-native';
-import { Banner } from 'react-native-paper';
+import { Banner } from '@divriots/starter-reactnative-paper/banner';
 
 const MyComponent = () => {
   const [visible, setVisible] = React.useState(true);
@@ -50,8 +50,6 @@ const MyComponent = () => {
     </Banner>
   );
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -87,5 +85,3 @@ export default MyComponent;
 };
 `}
 />
-
-## Props

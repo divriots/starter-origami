@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '~/button';
-import { Banner } from '../index';
+import { Banner } from '~/banner';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;
@@ -33,6 +33,5 @@ const BannerShowcase = () => {
     </div >
   );
 };
-
 
 export const banner = () => <BannerShowcase />;

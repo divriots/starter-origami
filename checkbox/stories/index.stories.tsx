@@ -1,5 +1,5 @@
 import React from 'react';;
-import { Checkbox } from '../index';
+import { Checkbox } from '~/checkbox';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;

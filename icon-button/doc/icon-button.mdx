@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { IconButton } from '../src/index';
+import { IconButton } from '~/icon-button';
 import { Playground } from '@divriots/dockit-react/playground';
 
 import { Layout } from '~/layout';
@@ -9,19 +9,17 @@ export default Layout;
 
 # IconButton
 
-### Description
+An icon button is a button which displays only an icon without a label. By default button has 150% size of the icon.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { IconButton, Colors } from 'react-native-paper';
+import { IconButton } from '@divriots/starter-reactnative-paper/icon-button';
 
 const MyComponent = () => (
   <IconButton icon="camera" size={20} onPress={() => console.log('Pressed')} />
 );
-
-export default MyComponent;
 ```
 
 <Playground
@@ -34,5 +32,3 @@ export default MyComponent;
 />
 `}
 />
-
-## Props

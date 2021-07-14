@@ -1,5 +1,5 @@
 import React from 'react';;
-import { Drawer } from '../index';
+import { Drawer } from '~/drawer';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;

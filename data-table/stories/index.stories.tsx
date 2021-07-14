@@ -1,11 +1,11 @@
-import React from 'react';;
-import { DataTable } from '../index';
+import React from 'react';
+import { DataTable } from '~/data-table';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;
 
 export const data_table = () => (
-  <DataTable>
+  <DataTable style={{ width: '25rem' }}>
     <DataTable.Header>
       <DataTable.Title>Dessert</DataTable.Title>
       <DataTable.Title numeric>Calories</DataTable.Title>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Appbar } from '../src/index';
+import { Appbar } from '~/appbar';
 import { Playground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
 
@@ -8,13 +8,13 @@ export default Layout;
 
 # Appbar
 
-### Description
+A component to display action items in a bar. It can be placed at the top or bottom. The top bar usually contains the screen title, controls such as navigation buttons, menu button etc. The bottom bar usually provides access to a drawer and up to four actions.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { Appbar } from 'react-native-paper';
+import { Appbar } from '@divriots/starter-reactnative-paper/appbar';
 import { StyleSheet } from 'react-native';
 
 const MyComponent = () => (
@@ -31,8 +31,6 @@ const MyComponent = () => (
     />
   </Appbar>
 );
-
-export default MyComponent;
 
 const styles = StyleSheet.create({
   bottom: {
@@ -61,5 +59,3 @@ const styles = StyleSheet.create({
 </Appbar>
 `}
 />
-
-## Props

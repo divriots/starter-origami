@@ -2,14 +2,15 @@
   "packages": {
     "dir": "",
     "menu": [
-      "introduction",
+      "readme",
       [
-        "theme",
+        "tokens",
         [
           "fonts",
           "colors",
           "roundness",
-          "animation"
+          "animation",
+          "theme"
         ]
       ],
       [
@@ -43,12 +44,6 @@
           "toggle-button",
           "touchable-ripple",
           "typography"
-        ]
-      ],
-      [
-        "infrastructure",
-        [
-          "theme"
         ]
       ],
       [

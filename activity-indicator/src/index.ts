@@ -1,1 +1,2 @@
-export { ActivityIndicator } from './activity-indicator';
+export { ActivityIndicator } from 'react-native-paper';
+

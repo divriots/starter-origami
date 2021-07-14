@@ -1,6 +1,6 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { DataTable } from '../src/index';
+import { DataTable } from '~/data-table';
 import { Playground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
 
@@ -8,13 +8,13 @@ export default Layout;
 
 # DataTable
 
-### Description
+Data tables allow displaying sets of data.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { DataTable } from 'react-native-paper';
+import { DataTable } from '@divriots/starter-reactnative-paper/data-table';
 
 const MyComponent = () => (
   <DataTable>
@@ -46,8 +46,6 @@ const MyComponent = () => (
     />
   </DataTable>
 );
-
-export default MyComponent;
 ```
 
 <Playground
@@ -80,5 +78,3 @@ export default MyComponent;
 </DataTable>
 `}
 />
-
-## Props

@@ -1,5 +1,5 @@
 import React from 'react';;
-import { FAB } from '../index';
+import { FAB } from '~/fab';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;

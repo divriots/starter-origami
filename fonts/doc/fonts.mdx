@@ -2,9 +2,22 @@ import React from 'react';
 import { mdx } from '@mdx-js/react';
 import { FontShowcase } from '~/showcases';
 import { Layout } from '~/layout';
+import { fontConfig } from '../index';
 
 export default Layout;
 
 # Fonts
 
-<FontShowcase />
+Various fonts used throughout different elements.
+
+## Web
+
+<FontShowcase definitions={fontConfig.web} />
+
+## iOS
+
+<FontShowcase definitions={fontConfig.ios} />
+
+## default
+
+<FontShowcase definitions={fontConfig.default} />

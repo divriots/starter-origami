@@ -1,1 +1,1 @@
-export { BottomNavigation } from './bottom-navigation';
+export { BottomNavigation } from 'react-native-paper';

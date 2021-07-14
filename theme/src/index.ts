@@ -9,8 +9,8 @@ import { animation } from '~/animation';
 export const createTheme = (colorScheme: 'light' | 'dark' = 'light') => ({
   ...DefaultTheme,
   dark: colorScheme === 'dark',
-  roundness: roundness,
+  roundness,
   colors: colorScheme === 'light' ? light : dark,
   fonts: configureFonts(fontConfig),
-  animation: animation,
+  animation,
 });

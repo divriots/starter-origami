@@ -1,19 +1,20 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { TextInput } from '../src/index';
+import { TextInput } from '~/text-input';
 import { Layout } from '~/layout';
+import { Playground } from '@divriots/dockit-react/playground';
 
 export default Layout;
 
 # TextInput
 
-### Description
+A component to allow users to input text.
 
 ## Usage
 
 ```tsx
 import * as React from 'react';
-import { TextInput } from 'react-native-paper';
+import { TextInput } from '@divriots/starter-reactnative-paper/text-input';
 
 const MyComponent = () => {
   const [text, setText] = React.useState('');
@@ -26,8 +27,6 @@ const MyComponent = () => {
     />
   );
 };
-
-export default MyComponent;
 ```
 
 <Playground
@@ -37,5 +36,3 @@ export default MyComponent;
 <TextInput mode="outlined" label="Email" />
 `}
 />
-
-## Props

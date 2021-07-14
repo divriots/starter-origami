@@ -1,5 +1,5 @@
 import React from 'react';;
-import { TextInput } from '../index';
+import { TextInput } from '~/text-input';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;

@@ -1,1 +1,2 @@
-export * from './search-bar';
+export { Searchbar } from 'react-native-paper';
+

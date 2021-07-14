@@ -1,6 +1,6 @@
 import React from 'react';;
 import { View } from 'react-native';
-import { RadioButton } from '../index';
+import { RadioButton } from '~/radio-button';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;
@@ -21,6 +21,6 @@ const RadioButtonShowcase = () => {
       />
     </View>
   );
-}
+};
 
 export const radio_button = () => <RadioButtonShowcase />;

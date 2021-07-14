@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Badge } from '../index';
+import { Badge } from '~/badge';
 import { storyLayout } from '~/layout';
 
 export default storyLayout;
