@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@babel/runtime": "latest",
-    "@divriots/dockit-react": "^0.0.56",
-    "@types/react": "^17.0.14",
-    "@types/react-native": "^0.64.11",
+    "@divriots/dockit-react": "latest",
+    "@types/react": "latest",
+    "@types/react-native": "latest",
     "react": "latest",
     "react-native": "latest",
     "react-native-paper": "latest"
