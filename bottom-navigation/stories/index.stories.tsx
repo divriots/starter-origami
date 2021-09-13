@@ -1,6 +1,6 @@
 import React from 'react';
-import { BottomNavigation } from '~/bottom-navigation';
-import { storyLayout } from '~/layout';
+import { BottomNavigation } from '@divriots/starter-origami/bottom-navigation';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

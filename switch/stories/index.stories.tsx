@@ -1,6 +1,6 @@
 import React from 'react';;
-import { Switch } from '~/switch';
-import { storyLayout } from '~/layout';
+import { Switch } from '@divriots/starter-origami/switch';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

@@ -1,7 +1,7 @@
 import React from 'react';;
-import { Surface } from '~/surface';
+import { Surface } from '@divriots/starter-origami/surface';
 import { Text } from 'react-native-paper';
-import { storyLayout } from '~/layout';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

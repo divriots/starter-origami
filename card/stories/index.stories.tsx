@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card } from '~/card';
-import { Button } from '~/button';
-import { storyLayout } from '~/layout';
+import { Card } from '@divriots/starter-origami/card';
+import { Button } from '@divriots/starter-origami/button';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

@@ -1,6 +1,6 @@
 import React from 'react';;
-import { ProgressBar } from '~/progress-bar';
-import { storyLayout } from '~/layout';
+import { ProgressBar } from '@divriots/starter-origami/progress-bar';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

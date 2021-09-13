@@ -1,6 +1,6 @@
 import React from 'react';;
-import { Drawer } from '~/drawer';
-import { storyLayout } from '~/layout';
+import { Drawer } from '@divriots/starter-origami/drawer';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

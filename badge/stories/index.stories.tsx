@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Badge } from '~/badge';
-import { storyLayout } from '~/layout';
+import { Badge } from '@divriots/starter-origami/badge';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

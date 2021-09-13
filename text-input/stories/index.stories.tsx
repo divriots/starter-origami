@@ -1,6 +1,6 @@
 import React from 'react';;
-import { TextInput } from '~/text-input';
-import { storyLayout } from '~/layout';
+import { TextInput } from '@divriots/starter-origami/text-input';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 
