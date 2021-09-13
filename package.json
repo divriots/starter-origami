@@ -9,15 +9,16 @@
     "serve": "npx backlight serve VvdVbvAaydq8hYLh7RLq --open"
   },
   "dependencies": {
-    "@babel/runtime": "latest",
-    "@divriots/dockit-react": "latest",
-    "@types/react": "latest",
-    "@types/react-native": "latest",
-    "react": "latest",
-    "react-native": "latest",
-    "react-native-paper": "latest"
+    "@babel/runtime": "^7.15.4",
+    "react": "^17.0.2",
+    "react-native": "^0.65.1",
+    "react-native-paper": "^4.9.2"
   },
   "devDependencies": {
+    "@divriots/dockit-react": "0.0.66",
+    "@mdx-js/react": "^1.6.22",
+    "@types/react": "^17.0.20",
+    "@types/react-native": "^0.65.0",
     "@webcomponents-dev/json-element": "^1.3.2",
     "babel-plugin-react-docgen": "^4.2.1",
     "prettier": "2.2.1"
