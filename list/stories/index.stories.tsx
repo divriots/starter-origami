@@ -1,7 +1,7 @@
 import React from 'react';;
 import { View, Text } from 'react-native';
-import { List } from '~/list';
-import { storyLayout } from '~/layout';
+import { List } from '@divriots/starter-origami/list';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

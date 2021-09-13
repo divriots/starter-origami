@@ -1,6 +1,6 @@
 import React from 'react';;
-import { Chip } from '~/chip';
-import { storyLayout } from '~/layout';
+import { Chip } from '@divriots/starter-origami/chip';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

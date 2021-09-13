@@ -11,7 +11,8 @@
     "baseUrl": ".",
     "outDir": "./dist",
     "paths": {
-      "~/*": ["*"]
+      "~/*": ["*"],
+      "@divriots/starter-origami/*": ["*"]
     }
   }
 }

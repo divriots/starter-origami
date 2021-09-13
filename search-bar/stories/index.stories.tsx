@@ -1,6 +1,6 @@
 import React from 'react';;
-import { Searchbar } from '~/search-bar';
-import { storyLayout } from '~/layout';
+import { Searchbar } from '@divriots/starter-origami/search-bar';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

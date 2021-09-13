@@ -1,8 +1,8 @@
 import React from 'react';
-import { Snackbar } from '~/snackbar';
-import { Button } from '~/button';
+import { Snackbar } from '@divriots/starter-origami/snackbar';
+import { Button } from '@divriots/starter-origami/button';
 import { View } from 'react-native';
-import { storyLayout } from '~/layout';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

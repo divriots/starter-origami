@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { View } from 'react-native';
-import { Appbar } from '~/appbar';
-import { storyLayout } from '~/layout';
+import { Appbar } from '@divriots/starter-origami/appbar';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

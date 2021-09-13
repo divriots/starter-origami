@@ -1,9 +1,9 @@
 import React from 'react';;
-import { Modal } from '~/modal';
-import { Button } from '~/button';
+import { Modal } from '@divriots/starter-origami/modal';
+import { Button } from '@divriots/starter-origami/button';
 import { Provider, Portal } from 'react-native-paper';
-import { Text } from '~/typography';
-import { storyLayout } from '~/layout';
+import { Text } from '@divriots/starter-origami/typography';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

@@ -1,7 +1,7 @@
 import React from 'react';;
 import { View } from 'react-native';
-import { RadioButton } from '~/radio-button';
-import { storyLayout } from '~/layout';
+import { RadioButton } from '@divriots/starter-origami/radio-button';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

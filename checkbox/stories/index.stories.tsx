@@ -1,6 +1,6 @@
 import React from 'react';;
-import { Checkbox } from '~/checkbox';
-import { storyLayout } from '~/layout';
+import { Checkbox } from '@divriots/starter-origami/checkbox';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 

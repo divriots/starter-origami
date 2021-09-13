@@ -1,7 +1,7 @@
 import React from 'react';
-import { TouchableRipple } from '~/touchable-ripple';
+import { TouchableRipple } from '@divriots/starter-origami/touchable-ripple';
 import { Text } from 'react-native-paper';
-import { storyLayout } from '~/layout';
+import { storyLayout } from '@divriots/starter-origami/layout';
 
 export default storyLayout;
 
