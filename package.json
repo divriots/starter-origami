@@ -1,8 +1,8 @@
 {
   "name": "@divriots/starter-reactnative-paper",
   "version": "0.0.0",
-  "description": "",
-  "license": "ISC",
+  "description": "A react-native-paper based design system as a starter kit for Backlight",
+  "license": "MIT",
   "type": "module",
   "homepage": "{{ homepage }}",
   "scripts": {
