@@ -7,7 +7,7 @@ import { Showcases } from '@divriots/dockit-react/showcases';
 import { createTheme } from '~/theme';
 import './icons.css';
 import { ColorScheme } from './types';
-
+import Logo from './Logo';
 
 export const Layout = (props) => {
   const [scheme, setScheme] = useState<ColorScheme>('light');
@@ -18,10 +18,12 @@ export const Layout = (props) => {
         components={{ Playground, Showcases }}
         onSwitch={setScheme}
         logo={
-          <img src="https://callstack.github.io/react-native-paper/images/sidebar-logo.svg" style={{ margin: '1rem' }} />
+          <div style={{ width: '130px', height: 'auto' }}>
+            <Logo scheme={scheme} />
+          </div>
         }
         {...props}
       />
-    </ThemeProvider >
+    </ThemeProvider>
   );
 };
