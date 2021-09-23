@@ -21,7 +21,7 @@ export const Layout = (props) => {
         components={{ Playground, Showcases }}
         onSwitch={setScheme}
         logo={
-          <div style={{ width: '130px', height: 'auto' }}>
+          <div style={{ width: '130px', height: '35px' }}>
             <Logo scheme={scheme} />
           </div>
         }
