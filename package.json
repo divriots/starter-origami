@@ -15,7 +15,7 @@
     "react-native-paper": "^4.9.2"
   },
   "devDependencies": {
-    "@divriots/dockit-react": "0.0.68",
+    "@divriots/dockit-react": "0.0.69",
     "@mdx-js/react": "^1.6.22",
     "@types/react": "^17.0.20",
     "@types/react-native": "^0.65.0",
