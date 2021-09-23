@@ -9,6 +9,7 @@ import { Playground } from '@divriots/dockit-react/playground';
 import { Showcases } from '@divriots/dockit-react/showcases';
 import { createTheme } from '~/theme';
 import './icons.css';
+import './layout.css';
 import { ColorScheme } from './types';
 import Logo from './Logo';
 
