@@ -9,7 +9,6 @@
     "serve": "npx backlight serve VvdVbvAaydq8hYLh7RLq --open"
   },
   "dependencies": {
-    "@babel/runtime": "^7.15.4",
     "react": "^17.0.2",
     "react-native": "^0.65.1",
     "react-native-paper": "^4.9.2"
