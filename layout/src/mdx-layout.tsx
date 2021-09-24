@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'react-native';
 import { Provider as ThemeProvider } from 'react-native-paper';
 import {
@@ -14,7 +14,9 @@ import { ColorScheme } from './types';
 import Logo from './Logo';
 
 export const Layout = (props) => {
-  const [scheme, setScheme] = useState<ColorScheme>(getInitialColorScheme());
+  const [scheme, setScheme] = React.useState<ColorScheme>(
+    getInitialColorScheme()
+  );
 
   return (
     <ThemeProvider theme={createTheme(scheme)}>
