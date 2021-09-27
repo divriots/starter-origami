@@ -33,11 +33,11 @@ const MyComponent = () => (
   scope={{ TouchableRipple, Text }}
   code={`
 <TouchableRipple
-  style={{ padding: '20rem'}}
+  style={{ 'padding-top': '15rem', 'padding-bottom': '15rem', display: 'flex', 'align-items': 'center'}}
   onPress={() => console.log('Pressed')}
   rippleColor="rgba(0, 0, 0, .32)"
 >
-  <Text style={{ width: '10rem' }}>Press anywhere</Text>
+  <Text>Press anywhere</Text>
 </TouchableRipple>
 `}
 />
