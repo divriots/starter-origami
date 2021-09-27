@@ -1,9 +1,9 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { IconButton } from '@divriots/starter-origami/icon-button';
+import { IconButton } from '~/icon-button';
 import { Playground } from '@divriots/dockit-react/playground';
 
-import { Layout } from '@divriots/starter-origami/layout';
+import { Layout } from '~/layout';
 
 export default Layout;
 
@@ -15,7 +15,7 @@ An icon button is a button which displays only an icon without a label. By defau
 
 ```tsx
 import * as React from 'react';
-import { IconButton } from '@divriots/starter-origami/icon-button';
+import { IconButton } from '~/icon-button';
 
 const MyComponent = () => (
   <IconButton icon="camera" size={20} onPress={() => console.log('Pressed')} />

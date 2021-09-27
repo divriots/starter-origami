@@ -1,12 +1,12 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Menu } from '@divriots/starter-origami/menu';
-import { Button } from '@divriots/starter-origami/button';
+import { Menu } from '~/menu';
+import { Button } from '~/button';
 import { Divider } from 'react-native-paper';
 import { View } from 'react-native';
 import { Playground } from '@divriots/dockit-react/playground';
 
-import { Layout } from '@divriots/starter-origami/layout';
+import { Layout } from '~/layout';
 
 export default Layout;
 
@@ -20,8 +20,8 @@ Menus display a list of choices on temporary elevated surfaces. Their placement 
 import * as React from 'react';
 import { View } from 'react-native';
 import { Divider, Provider } from 'react-native-paper';
-import { Button } from '@divriots/starter-origami/button';
-import { Menu } from '@divriots/starter-origami/menu';
+import { Button } from '~/button';
+import { Menu } from '~/menu';
 
 const MyComponent = () => {
   const [visible, setVisible] = React.useState(false);

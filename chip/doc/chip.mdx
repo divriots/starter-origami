@@ -1,8 +1,8 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Chip } from '@divriots/starter-origami/chip';
+import { Chip } from '~/chip';
 import { Playground } from '@divriots/dockit-react/playground';
-import { Layout } from '@divriots/starter-origami/layout';
+import { Layout } from '~/layout';
 
 export default Layout;
 
@@ -14,7 +14,7 @@ Chips can be used to display entities in small blocks.
 
 ```tsx
 import * as React from 'react';
-import { Chip } from '@divriots/starter-origami/chip';
+import { Chip } from '~/chip';
 
 const MyComponent = () => (
   <Chip icon="information" onPress={() => console.log('Pressed')}>

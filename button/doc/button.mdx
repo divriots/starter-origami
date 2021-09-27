@@ -1,8 +1,8 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Button } from '@divriots/starter-origami/button';
+import { Button } from '~/button';
 import { Playground } from '@divriots/dockit-react/playground';
-import { Layout } from '@divriots/starter-origami/layout';
+import { Layout } from '~/layout';
 
 export default Layout;
 
@@ -14,7 +14,7 @@ A button is component that the user can press to trigger an action.
 
 ```tsx
 import * as React from 'react';
-import { Button } from '@divriots/starter-origami/button';
+import { Button } from '~/button';
 
 const MyComponent = () => (
   <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>

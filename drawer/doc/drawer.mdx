@@ -1,9 +1,9 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Drawer } from '@divriots/starter-origami/drawer';
+import { Drawer } from '~/drawer';
 import { Playground } from '@divriots/dockit-react/playground';
 
-import { Layout } from '@divriots/starter-origami/layout';
+import { Layout } from '~/layout';
 
 export default Layout;
 
@@ -16,7 +16,7 @@ Drawer.Section: A component to group content inside a navigation drawer.
 
 ```tsx
 import * as React from 'react';
-import { Drawer } from '@divriots/starter-origami/drawer';
+import { Drawer } from '~/drawer';
 
 const MyComponent = () => {
   const [active, setActive] = React.useState('');

@@ -1,8 +1,8 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { ActivityIndicator } from '@divriots/starter-origami/activity-indicator';
+import { ActivityIndicator } from '~/activity-indicator';
 import { Playground } from '@divriots/dockit-react/playground';
-import { Layout } from '@divriots/starter-origami/layout';
+import { Layout } from '~/layout';
 
 export default Layout;
 
@@ -14,7 +14,7 @@ Activity indicator is used to present progress of some activity in the app. It c
 
 ```tsx
 import * as React from 'react';
-import { ActivityIndicator } from '@divriots/starter-origami/activity-indicator';
+import { ActivityIndicator } from '~/activity-indicator';
 
 const MyComponent = () => (
   <ActivityIndicator animating={true} color="#c62828" />
