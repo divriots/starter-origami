@@ -67,12 +67,3 @@ export const description = Object.keys(colors).reduce(
   (acc, c) => ({ ...acc, [c]: colors[c].description }),
   {}
 );
-
-// export const { light, dark, description } = Object.keys(colors).reduce(
-//   ({ light, dark, description }, c) => ({
-//     light: { ...light, [c]: colors[c].light },
-//     dark: { ...dark, [c]: colors[c].dark },
-//     description: { ...description, [c]: colors[c].description },
-//   }),
-//   { light: {}, dark: {}, description: {} }
-// );

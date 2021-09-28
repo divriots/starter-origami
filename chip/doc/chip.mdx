@@ -26,6 +26,9 @@ const MyComponent = () => (
 <Playground
   scope={{ Chip }}
   code={`
-<Chip icon="information" onPress={() => console.log('Pressed')}>Example Chip</Chip>
+<div style={{ display: 'flex'}}>
+  <Chip icon="information" onPress={() => console.log('Pressed')}>Example Chip</Chip>
+  <Chip icon="information" onPress={() => console.log('Pressed')}>Example Chip</Chip>
+</div>
 `}
 />
