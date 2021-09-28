@@ -1,9 +1,9 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Banner } from '@divriots/starter-origami/banner';
-import { Button } from '@divriots/starter-origami/button';
+import { Banner } from '~/banner';
+import { Button } from '~/button';
 import { Playground } from '@divriots/dockit-react/playground';
-import { Layout } from '@divriots/starter-origami/layout';
+import { Layout } from '~/layout';
 
 export default Layout;
 
@@ -16,7 +16,7 @@ Banner displays a prominent message and related actions.
 ```tsx
 import * as React from 'react';
 import { Image } from 'react-native';
-import { Banner } from '@divriots/starter-origami/banner';
+import { Banner } from '~/banner';
 
 const MyComponent = () => {
   const [visible, setVisible] = React.useState(true);

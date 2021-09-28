@@ -3,7 +3,7 @@ import { ProgressBar } from '~/progress-bar';
 import { Text } from '~/typography';
 import { animation } from '~/animation';
 
-export const AnimationDemo = () => {
+export const AnimationShowcase = () => {
   const [progress, setProgress] = React.useState(0);
   const interval = setInterval(() => setProgress(1 - progress), 2000);
   React.useEffect(() => () => clearInterval(interval));

@@ -1,3 +1,3 @@
 export const animation = {
-  scale: 1.0,
+  scale: 2.0,
 };

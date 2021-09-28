@@ -1,9 +1,9 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Snackbar } from '@divriots/starter-origami/snackbar';
+import { Snackbar } from '~/snackbar';
 import { View } from 'react-native';
-import { Button } from '@divriots/starter-origami/button';
-import { Layout } from '@divriots/starter-origami/layout';
+import { Button } from '~/button';
+import { Layout } from '~/layout';
 import { Playground } from '@divriots/dockit-react/playground';
 
 export default Layout;
@@ -17,8 +17,8 @@ Snackbars provide brief feedback about an operation through a message at the bot
 ```tsx
 import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { Button } from '@divriots/starter-origami/button';
-import { Snackbar } from '@divriots/starter-origami/snack-bar';
+import { Button } from '~/button';
+import { Snackbar } from '~/snack-bar';
 
 const MyComponent = () => {
   const [visible, setVisible] = React.useState(false);
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   const onDismissSnackBar = () => setVisible(false);
   return (
     <View style={{ flex: 1, justifyContent: 'space-between'}}>
-      <Button onPress={onToggleSnackBar}>{visible ? 'Hide' : 'Show'}</Button>
+      <Button onPress={onToggleSnackBar} style={{ marginBottom: '5rem' }}>{visible ? 'Hide' : 'Show'}</Button>
       <Snackbar
         visible={visible}
         onDismiss={onDismissSnackBar}

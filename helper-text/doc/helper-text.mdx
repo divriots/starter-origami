@@ -1,11 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
-import { TextInput } from '@divriots/starter-origami/text-input';
+import { TextInput } from '~/text-input';
 import { mdx } from '@mdx-js/react';
-import { HelperText } from '@divriots/starter-origami/helper-text';
+import { HelperText } from '~/helper-text';
 import { Playground } from '@divriots/dockit-react/playground';
 
-import { Layout } from '@divriots/starter-origami/layout';
+import { Layout } from '~/layout';
 
 export default Layout;
 
@@ -18,8 +18,8 @@ Helper text is used in conjuction with input elements to provide additional hint
 ```tsx
 import * as React from 'react';
 import { View } from 'react-native';
-import { TextInput } from '@divriots/starter-origami/text-input';
-import { HelperText } from '@divriots/starter-origami/helper-text';
+import { TextInput } from '~/text-input';
+import { HelperText } from '~/helper-text';
 
 const MyComponent = () => {
   const [text, setText] = React.useState('');

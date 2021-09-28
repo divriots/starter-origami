@@ -1,29 +1,69 @@
-export const light = {
-  primary: '#6200EE',
-  accent: '#03DAC4',
-  background: '#F6F6F6',
-  surface: '#FFFFFF',
-  error: '#B00020',
-  text: '#000000',
-  onBackground: '#000000',
-  onSurface: '#000000',
-  disabled: '#00000042',
-  placeholder: '#00000042',
-  backdrop: '#00000080',
-  notification: '#F50057',
+const colors = {
+  primary: {
+    light: '#6200EE',
+    dark: '#648DAE',
+    description: 'primary color for your app, usually your brand color',
+  },
+  accent: {
+    light: '#03DAC4',
+    dark: '#388E3C',
+    description:
+      'secondary color for your app which complements the primary color',
+  },
+  background: {
+    light: '#F6F6F6',
+    dark: '#262626',
+    description: 'background color for pages, such as lists',
+  },
+  surface: {
+    light: '#FFFFFF',
+    dark: '#121212',
+    description:
+      'background color for elements containing content, such as cards',
+  },
+  text: {
+    light: '#000000',
+    dark: '#FFFFFF',
+    description: 'text color for content',
+  },
+  disabled: {
+    light: '#00000042',
+    dark: '#FFFFFF42',
+    description: 'color for disabled elements',
+  },
+  placeholder: {
+    light: '#00000042',
+    dark: '#FFFFFF42',
+    description: 'color for placeholder text, such as input placeholder',
+  },
+  backdrop: {
+    light: '#00000080',
+    dark: '#FFFFFF80',
+    description: 'color for backdrops of various components such as modals',
+  },
+  onSurface: {
+    light: '#000000',
+    dark: '#FFFFFF80',
+    description: 'background color for snackbars',
+  },
+  notification: {
+    light: '#F50057',
+    dark: '#F57C00',
+    description: 'background color for badges',
+  },
 };
 
-export const dark = {
-  primary: '#648DAE',
-  accent: '#388E3C',
-  background: '#262626',
-  surface: '#121212',
-  error: '#D32F2F',
-  text: '#FFFFFF',
-  onBackground: '#FFFFFFB3',
-  onSurface: '#FFFFFF80',
-  disabled: '#FFFFFF42',
-  placeholder: '#FFFFFF42',
-  backdrop: '#FFFFFF80',
-  notification: '#F57C00',
-};
+export const light = Object.keys(colors).reduce(
+  (acc, c) => ({ ...acc, [c]: colors[c].light }),
+  {}
+);
+
+export const dark = Object.keys(colors).reduce(
+  (acc, c) => ({ ...acc, [c]: colors[c].dark }),
+  {}
+);
+
+export const description = Object.keys(colors).reduce(
+  (acc, c) => ({ ...acc, [c]: colors[c].description }),
+  {}
+);

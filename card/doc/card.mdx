@@ -1,9 +1,9 @@
 import React from 'react';
 import { mdx } from '@mdx-js/react';
-import { Card } from '@divriots/starter-origami/card';
-import { Button } from '@divriots/starter-origami/button';
+import { Card } from '~/card';
+import { Button } from '~/button';
 import { Playground } from '@divriots/dockit-react/playground';
-import { Layout } from '@divriots/starter-origami/layout';
+import { Layout } from '~/layout';
 
 export default Layout;
 
@@ -15,13 +15,10 @@ A card is a sheet of material that serves as an entry point to more detailed inf
 
 ```tsx
 import * as React from 'react';
-import { Avatar } from '@divriots/starter-origami/avatar';
-import { Button } from '@divriots/starter-origami/button';
-import { Card } from '@divriots/starter-origami/card';
-import {
-  Title,
-  Paragraph,
-} from '@divriots/starter-origami/typography';
+import { Avatar } from '~/avatar';
+import { Button } from '~/button';
+import { Card } from '~/card';
+import { Title, Paragraph } from '~/typography';
 
 const LeftContent = (props) => <Avatar.Icon {...props} icon="folder" />;
 
