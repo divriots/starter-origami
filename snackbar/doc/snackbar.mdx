@@ -5,6 +5,7 @@ import { View } from 'react-native';
 import { Button } from '~/button';
 import { Layout } from '~/layout';
 import { Playground } from '@divriots/dockit-react/playground';
+import { ErrorBoundary } from './ErrorBoundary';
 
 export default Layout;
 
@@ -55,22 +56,24 @@ const styles = StyleSheet.create({
 ```
 
 <Playground
-  scope={{ Snackbar, View, Button }}
+  scope={{ Snackbar, View, Button, ErrorBoundary }}
   code={`
 () => {
   const [visible, setVisible] = React.useState(false);
   const onToggleSnackBar = () => setVisible(!visible);
   const onDismissSnackBar = () => setVisible(false);
   return (
-    <View style={{ flex: 1, justifyContent: 'space-between'}}>
-      <Button onPress={onToggleSnackBar} style={{ marginBottom: '5rem' }}>{visible ? 'Hide' : 'Show'}</Button>
-      <Snackbar
-        visible={visible}
-        onDismiss={onDismissSnackBar}
-        action={{ label: 'Undo', onPress: () => console.log('pressed') }}>
-        Hey there! I'm a Snackbar.
-      </Snackbar>
-    </View>
+    <ErrorBoundary>
+      <View style={{ flex: 1, justifyContent: 'space-between'}}>
+        <Button onPress={onToggleSnackBar} style={{ marginBottom: '5rem' }}>{visible ? 'Hide' : 'Show'}</Button>
+        <Snackbar
+          visible={visible}
+          onDismiss={onDismissSnackBar}
+          action={{ label: 'Undo', onPress: () => console.log('pressed') }}>
+          Hey there! I'm a Snackbar.
+        </Snackbar>
+      </View>
+    </ErrorBoundary>
   );
 };
 `}
