@@ -26,9 +26,17 @@ const MyComponent = () => (
 <Playground
   scope={{ Button }}
   code={`
-<Button>Default</Button> 
-<Button mode="outlined">Outlined</Button> 
-<Button mode="contained">Contained</Button>  
+<Button onPress={() => console.log('Pressed')}>
+  Default
+</Button>
+<br />
+<Button mode="outlined" onPress={() => console.log('Pressed')}>
+  Outlined
+</Button> 
+<br />
+<Button mode="contained" onPress={() => console.log('Pressed')}>
+  Contained
+</Button>  
 `}
 />
 
