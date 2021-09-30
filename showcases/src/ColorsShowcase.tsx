@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, ViewStyle, TextStyle } from 'react-native';
+import { View, ViewStyle, TextStyle } from 'react-native';
+import { Text, Subheading } from '~/typography';
 import { light, dark } from '~/colors';
 import { useTheme } from 'react-native-paper';
 
@@ -12,17 +13,14 @@ const styles = {
   wrapper: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: '1rem',
-    marginRight: '1rem',
+    marginBottom: '1.2rem',
+    marginRight: '1.2rem',
   },
   box: {
     width: '6rem',
     height: '6rem',
     marginBottom: '.5rem',
     borderRadius: 4,
-  },
-  caption: {
-    fontSize: 14,
   },
 };
 
@@ -40,16 +38,10 @@ export const ColorsShowcase = ({
           <View
             style={{ backgroundColor: color, ...styles.box } as ViewStyle}
           />
-          <Text
-            style={
-              {
-                ...styles.caption,
-                color: colors.text,
-              } as TextStyle
-            }
-          >
+          <Subheading style={{ color: colors.text } as TextStyle}>
             {caption}
-          </Text>
+          </Subheading>
+          <Text style={{ color: colors.backdrop } as TextStyle}>{color}</Text>
         </View>
       ))}
     </View>
