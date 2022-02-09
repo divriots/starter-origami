@@ -1,7 +1,7 @@
 const colors = {
   primary: {
-    light: '#6200EE',
-    dark: '#648DAE',
+    light: '#ee5700',
+    dark: '#b0c0ce',
     description: 'primary color for your app, usually your brand color',
   },
   accent: {
