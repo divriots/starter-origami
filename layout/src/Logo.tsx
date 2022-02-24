@@ -1,7 +1,7 @@
 import React from 'react';
 import { ColorScheme } from './types';
 
-export default (props: { scheme: ColorScheme }) => {
+export default function Logo(props: { scheme: ColorScheme }) {
   const color = props.scheme === 'light' ? 'black' : 'white';
 
   return (
@@ -200,4 +200,4 @@ export default (props: { scheme: ColorScheme }) => {
       />
     </svg>
   );
-};
+}
